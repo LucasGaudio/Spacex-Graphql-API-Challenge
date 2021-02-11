@@ -115,25 +115,27 @@ export default function Mission() {
 							justify="center"
 							key={id}
 						>
-							<Grid
-								item
-								container
-								direction="column"
-								alignItems="center"
-								justify="center"
-								style={{ height: "90vh" }}
-							>
-								<img
-									src={links.mission_patch_small}
-									alt={mission_name}
-									className={classes.missionPatch}
-								/>
-								<Scroll to="mission-name" smooth={true}>
-									<IconButton>
-										<ExpandMoreIcon className={classes.goDown} />
-									</IconButton>
-								</Scroll>
-							</Grid>
+							{links.mission_patch_small ? (
+								<Grid
+									item
+									container
+									direction="column"
+									alignItems="center"
+									justify="center"
+									style={{ height: "90vh" }}
+								>
+									<img
+										src={links.mission_patch_small}
+										alt={mission_name}
+										className={classes.missionPatch}
+									/>
+									<Scroll to="mission-name" smooth={true}>
+										<IconButton>
+											<ExpandMoreIcon className={classes.goDown} />
+										</IconButton>
+									</Scroll>
+								</Grid>
+							) : null}
 
 							<Grid
 								item

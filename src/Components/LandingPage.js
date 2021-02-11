@@ -35,21 +35,20 @@ const useStyles = makeStyles(theme => ({
 	caseCard: {
 		display: "flex",
 		borderRadius: 15,
-		height: "45em",
-		width: "90em",
+		height: "35em",
+		width: "70em",
 		[theme.breakpoints.down("md")]: {
 			height: "35.6em",
 			maxWidth: "57em",
 		},
 		[theme.breakpoints.down("sm")]: {
-			height: "51.6em",
+			height: "61.6em",
 			maxWidth: "35em",
 			display: "grid",
 		},
 		[theme.breakpoints.down("xs")]: {
 			height: "60em",
 			maxWidth: "25em",
-			borderRadius: 0,
 		},
 	},
 	caseText: {
@@ -58,6 +57,9 @@ const useStyles = makeStyles(theme => ({
 		marginTop: "1em",
 		marginBottom: "1em",
 		color: "white",
+		[theme.breakpoints.only("md")]: {
+			fontSize: "1rem",
+		},
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "0.8rem",
 			maxWidth: "28em",
@@ -70,6 +72,17 @@ const useStyles = makeStyles(theme => ({
 		[theme.breakpoints.down("xs")]: {
 			fontSize: "2em",
 			maxWidth: "10em",
+		},
+	},
+	image: {
+		[theme.breakpoints.down("sm")]: {
+			height: "40.8em",
+			maxWidth: "35em",
+			display: "grid",
+		},
+		[theme.breakpoints.down("xs")]: {
+			height: "60em",
+			maxWidth: "25em",
 		},
 	},
 }));
@@ -131,6 +144,7 @@ export default function LandingPage() {
 						</Grid>
 						<Grid item style={{ width: "55em", height: "cover" }}>
 							<CardMedia
+								className={classes.image}
 								component="img"
 								alt="case2"
 								image={
