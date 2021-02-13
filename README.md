@@ -1,7 +1,3 @@
-<h1 align="center">
-    <img alt="icon" title="icon" src="src/assets/spacex.png" width="80%"  />
-</h1>
-
 <p align="center">
   <a href="#-site">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
