@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="icon" title="icon" src="src/assets/spacex.png" width="13%"  />
+    <img alt="icon" title="icon" src="src/assets/spacex.png" width="80%"  />
 </h1>
 
 <p align="center">
